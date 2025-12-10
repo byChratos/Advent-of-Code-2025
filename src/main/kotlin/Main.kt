@@ -23,6 +23,13 @@ fun solveThirdDay() {
     day.solveAndPrint(input, 2)
 }
 
+fun solveFourthDay() {
+    val day = Day4()
+    val input = Util.getLinesAsListItems("/4.txt")
+    day.solveAndPrint(input, 1)
+    day.solveAndPrint(input, 2)
+}
+
 fun main() {
-    solveThirdDay()
+    solveFourthDay()
 }
