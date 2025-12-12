@@ -19,14 +19,14 @@ class ProductIdChecker {
             val idString = id.toString()
             val length = idString.length
 
-            for (len in 1..<length) {
+            for (lenOfPattern in 1..<length) {
                 // Cant be a repeated pattern, as no multiple of pattern length is the correct length
 
-                if (length % len != 0) continue
-                val pattern = idString.substring(0, len)
+                if (length % lenOfPattern != 0) continue
+                val pattern = idString.substring(0, lenOfPattern)
 
                 // Number if pattern is repeated to fit length of id
-                val repeatedPattern = pattern.repeat(length / len)
+                val repeatedPattern = pattern.repeat(length / lenOfPattern)
                 if (repeatedPattern == idString) {
                     return true
                 }

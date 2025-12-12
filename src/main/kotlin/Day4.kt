@@ -3,7 +3,7 @@ package de.cfe
 import de.cfe.helper.Day
 import de.cfe.helper.RollsGrid
 
-class Day4 : Day(4) {
+class Day4 : Day<List<String>>(4) {
     override fun part1(input: List<String>): Any {
         val rollsGrid = RollsGrid(input as MutableList<String>)
         rollsGrid.checkGrid(listOf('@', 'x'))

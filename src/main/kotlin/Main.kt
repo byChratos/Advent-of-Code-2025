@@ -30,6 +30,13 @@ fun solveFourthDay() {
     day.solveAndPrint(input, 2)
 }
 
+fun solveFifthDay() {
+    val day = Day5()
+    val (idRanges, ids) = Util.getIdRangesAndIds("/5.txt")
+    day.solveAndPrint(idRanges to ids, 1)
+    day.solveAndPrint(idRanges to ids, 2) //TODO overlaps in range.next und range jeweils?
+}
+
 fun main() {
-    solveFourthDay()
+    solveFifthDay()
 }

@@ -2,7 +2,7 @@ package de.cfe
 
 import de.cfe.helper.Day
 
-class Day12 : Day(12) {
+class Day12 : Day<List<String>>(12) {
     override fun part1(input: List<String>): Any {
         TODO("Not yet implemented")
     }

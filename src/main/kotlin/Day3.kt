@@ -3,7 +3,7 @@ package de.cfe
 import de.cfe.helper.BatteryPack
 import de.cfe.helper.Day
 
-class Day3 : Day(3) {
+class Day3 : Day<List<String>>(3) {
     override fun part1(input: List<String>): Any {
         var sum = 0
         for (line in input) {

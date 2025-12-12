@@ -3,7 +3,7 @@ package de.cfe
 import de.cfe.helper.Day
 import de.cfe.helper.Dial
 
-class Day1 : Day(1) {
+class Day1 : Day<List<String>>(1) {
     override fun part1(input: List<String>): Any {
         val dial = Dial()
 

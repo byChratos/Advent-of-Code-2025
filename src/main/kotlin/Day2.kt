@@ -3,7 +3,7 @@ package de.cfe
 import de.cfe.helper.Day
 import de.cfe.helper.ProductIdChecker
 
-class Day2 : Day(2) {
+class Day2 : Day<List<String>>(2) {
 
     override fun part1(input: List<String>): Any {
         val allInvalidIds: MutableList<Long?> = ArrayList<Long?>()
